@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<ctype.h>
+#define eof '\n'
+int main()
+{
+    int count=0,i,tag;
+    char letter[80];
+    //sa
+    while((letter[count]=getchar())!='\0')
+      count++;
+    for(count=0;count<=tag;++count)
+    putchar(toupper(letter[count]));
+
+}

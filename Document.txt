@@ -1,0 +1,9 @@
+                                        Soil Classification using Machine Learning
+                             Methods and Crop Suggestion Based on Soil Series
+Introduction:  In this paper researcher tried to extract the features and characterstics of various soil types to know which crops grow better in certain soil types.
+
+Methods: Their  method was divided into two phases.One was training and another was testing phase.They maintained a soil dataset which contains chemical attributes collecting from Soil Resources Development Institute (SRDI).They gave the chemical features into the training state and after that they classify them with the help of several machine learning algorithms ( K-NN , SVM , Bagged Tree ).  In testing phases they tested  data from Test Dataset.
+Result : Their accuracy was 94.95% using Support Vector Machine.Another two research  from which they inspired  have gained 91.90% and 92.3% accuracy respectively  and used  J48 method.
+
+Discussion: I think we can find  better solution although using same algorithm (K-NN , SVM ,Bagged Tree )  but  considering Climate.
+ 

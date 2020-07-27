@@ -1,0 +1,57 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int t,b,p,f,c,h,sum;
+    cin>>t;
+    while(t--)
+    {
+        sum=0;
+        cin>>b>>p>>f;
+        cin>>h>>c;
+        if(h>=c)
+        {
+            if(b>=2*p)
+            {
+                sum+=p*h;
+                b-=2*p;
+                if(b>=2*f)
+                sum+=f*c;
+                else
+                  sum+=c*(b/2);
+            }
+            else
+            {
+                sum+=h*(b/2);
+                b-=(b/2);
+                if(b>=2*f)
+                    sum+=f*c;
+                else
+                    sum+=c*(b/2);
+            }
+            printf("%d\n",sum);
+        }
+        else
+        {
+           if(b>=2*f)
+            {
+                sum+=f*c;
+                b-=2*f;
+                if(b>=2*p)
+                sum+=p*h;
+                else
+                  sum+=h*(b/2);
+            }
+            else
+            {
+                sum+=c*(b/2);
+                b-=(b/2);
+                if(b>=2*p)
+                    sum+=p*h;
+                else
+                    sum+=h*(b/2);
+            }
+            printf("%d\n",sum);
+        }
+    }
+}
